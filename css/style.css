@@ -1,0 +1,83 @@
+body {
+    font-family: blacksword;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0e11;
+}
+
+header {
+    background-color: #10131a;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 110px;
+    width: 100%;
+}
+
+.menu ul li {
+    margin-top: 20px;
+    margin-left: 60px;
+    height: 205px;
+    width: 205px;
+    display: inline-block;
+    list-style: none;
+}
+
+.botaoCorte {
+    height: 205px;
+    width: 205px;
+}
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-size: 21px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+}
+
+.bn36 {
+    border-color: #ffffff;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn36:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+form {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container {
+    text-align: center;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: auto;
+    padding: 5px 140px 64px 0;
+    width: 396px;
+    background-color: #171b24;
+
+}
+
+body {
+    background-color: #0b0e11;
+}
+
+p {
+    margin-top: 42px;
+    margin-bottom: 1px;
+    margin-left: 120px;
+}
