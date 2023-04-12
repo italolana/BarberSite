@@ -1,7 +1,10 @@
+<?php
+include_once('Incluides/Connect.php');
+?>
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
-
 <head>
     <style>
         @font-face {
@@ -22,7 +25,7 @@
     <div style="float: right; margin-right: 53px;">
         <p style="font-size: 40px; color: #ffffff; margin: 0px;">Valor</p>
         <div style="font-size: 30px; color: #008d5b; margin-left: 10px; font-family: Arial, Helvetica, sans-serif;">
-            R$ 999
+            R$ RAfaelLixo
         </div>
     </div>
     <div style="float: right; color: #ffffff;">

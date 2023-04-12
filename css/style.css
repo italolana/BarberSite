@@ -1,3 +1,5 @@
+/* Define default styles for all devices */
+
 body {
     font-family: blacksword;
     width: 100%;
@@ -52,12 +54,10 @@ header {
 }
 
 form {
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .container {
@@ -67,9 +67,8 @@ form {
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     margin: auto;
     padding: 5px 140px 64px 0;
-    width: 396px;
+    max-width: 396px;
     background-color: #171b24;
-
 }
 
 body {
@@ -80,4 +79,42 @@ p {
     margin-top: 42px;
     margin-bottom: 1px;
     margin-left: 120px;
+}
+
+/* Apply styles for screens with a maximum width of 767px */
+
+@media screen and (max-width: 767px) {
+    /* Reduce the size of the header */
+    header {
+        height: 70px;
+    }
+
+    /* Center the menu items and reduce their size */
+    .menu ul li {
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+    }
+
+    /* Adjust the size of the button */
+    .botaoCorte {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* Adjust the font size and padding of the button */
+    .bn3637 {
+        padding: 0.5rem 1.5rem;
+        font-size: 16px;
+    }
+
+    /* Adjust the margin of the paragraph */
+    p {
+        margin-left: 0;
+    }
+
+    /* Adjust the padding of the container */
+    .container {
+        padding: 5px 20px 64px;
+    }
 }

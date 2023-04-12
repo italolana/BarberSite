@@ -1,3 +1,0 @@
-# BarberSite
-lul
-lul2
