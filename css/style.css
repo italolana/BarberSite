@@ -5,26 +5,49 @@ body {
     width: 100%;
     height: 100%;
     background-color: #0b0e11;
+    margin-top: 10%;
+    margin-left: 5%;
+
 }
 
 header {
     background-color: #10131a;
+    font-size: 100%;
+    height: 10%;
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
-    height: 110px;
-    width: 100%;
+    right: 0;
+    align-items: center;
+}
+header div:first-child {
+    padding: 10px;
 }
 
-.menu ul li {
-    margin-top: 20px;
-    margin-left: 60px;
-    height: 205px;
-    width: 205px;
-    display: inline-block;
+.products ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 
+.products li {
+    flex-basis: 30%;
+    margin-bottom: 1rem;
+}
+
+.products img {
+    display: block;
+    width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    padding: 0.5rem;
+    border: 2px solid red;
+    border-radius: 50px 20px;
+    background-color: lightgrey;
+}
 .botaoCorte {
     height: 205px;
     width: 205px;

@@ -18,40 +18,38 @@ include_once('Incluides/Connect.php');
 </head>
 
 <body>
-<header>
-    <div style="float:left; margin-left: 53px;">
-        <img src="./img/logo.png"/>
+
+
+<header style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="margin-left: 20px;">
+        <img src="./img/logo.png" style="height: 120px; width: auto;">
     </div>
-    <div style="float: right; margin-right: 53px;">
-        <p style="font-size: 40px; color: #ffffff; margin: 0px;">Valor</p>
-        <div style="font-size: 30px; color: #008d5b; margin-left: 10px; font-family: Arial, Helvetica, sans-serif;">
-            R$ RAfaelLixo
+    <div style="color: #ffffff; font-size: 35px; font-weight: bold;margin-right: 40%;">
+        Nome empresa
+    </div>
+    <div style="display: flex; align-items: center; margin-right: 20px;">
+        <div style="color: #ffffff; font-size: 24px; font-weight: bold; margin-right: 10px;">
+            Valor
+        </div>
+        <div style="color: #008d5b; font-size: 24px; font-weight: bold;">
+            R$ 999
         </div>
     </div>
-    <div style="float: right; color: #ffffff;">
-        <p style="font-size: 40px; margin: 0; margin-right: 60px; height: 44px;">Contato</p>
-        <div style="margin-top: 10px;">
-            <a href="https://api.whatsapp.com/send?phone=5531973367867" style="margin-left: 20px;"><img
-                    src="./img/whatsapp.png"></a>
-            <a href="https://www.instagram.com/hiago_dia_/" style="margin-left: 30px;"><img
-                    src="./img/insta.png"></a>
+    <div style="display: flex; align-items: center; margin-right: 20px;">
+        <div style="color: #ffffff; font-size: 24px; font-weight: bold; margin-right: 10px;">
+            Contato
         </div>
+        <a href="https://api.whatsapp.com/" style="margin-right: 5%;"><img src="./img/whatsapp.png"></a>
+        <a href="https://www.instagram.com/" style="margin-right: 0%;"><img src="./img/insta.png"></a>
     </div>
-    <div style="text-align: left; margin-left: 9px; font-size: 40px; color: #ffffff;">
-        <p style="margin: 20px;">Nome empresa</p>
-    </div>
+
 </header>
 <main>
-    <div class="menu">
-        <ul style="margin-block-start: 190px; margin-inline-start: 10px;">
+    <div class="products" style="text-align: -webkit-center;">
+        <ul>
+            <li><a href=><img src="./img/corte.png"/></a></li>
+            <li><a href=><img src="./img/sobrancelha.webp"/></a></li>
             <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/seleção.png"/></a></li>
             <li><a href=><img src="./img/icone.png"/></a></li>
             <li><a href=><img src="./img/icone.png"/></a></li>
             <li><a href=><img src="./img/icone.png"/></a></li>
