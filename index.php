@@ -1,5 +1,13 @@
 <?php
 include_once('Incluides/Connect.php');
+session_start();
+
+// initialize cart as an empty array
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -47,16 +55,28 @@ include_once('Incluides/Connect.php');
 <main>
     <div class="products" style="text-align: -webkit-center;">
         <ul>
-            <li><a href=><img src="./img/corte.png"/></a></li>
-            <li><a href=><img src="./img/sobrancelha.webp"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
-            <li><a href=><img src="./img/icone.png"/></a></li>
+            <?php
+            $result = $mysqli->query("SELECT * FROM PRODUTOS");
+
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                    $product_id = $row["Id"]; // get the product ID
+                    $product_name = $row["Servico"];
+                    $product_price = $row["Valor"];
+
+                    // generate the HTML code for the product image and link
+                    echo "<li><a href='product.php?id=$product_id'>";
+                    echo "<img src='./img/$product_name.png'/>";
+                    echo "</a></li>";
+                    
+                }
+            } else {
+                echo "0 results";
+            }
+
+            $mysqli->close();
+            ?>
         </ul>
     </div>
 </main>
@@ -67,9 +87,7 @@ include_once('Incluides/Connect.php');
 </div>
 
 
-<?php
 
-?>
 </body>
 
 </html>
